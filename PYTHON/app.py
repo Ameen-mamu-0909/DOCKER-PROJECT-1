@@ -1,0 +1,1 @@
+print("Ameen mamu....") 
