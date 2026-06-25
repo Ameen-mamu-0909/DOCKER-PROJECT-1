@@ -1,6 +1,37 @@
-FROM nginx:latest
-WORKDIR /python-1
-RUN npm install
+FROM python:3.12
+WORKDIR /app
+COPY requirements.txt .
+EXPOSE 5000
 COPY . .
-EXPOSE 3000
-CMD ["npm","install"] 
+RUN pip install -r requirements.txt 
+CMD ["python","app.py"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
